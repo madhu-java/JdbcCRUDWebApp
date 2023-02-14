@@ -6,6 +6,7 @@ import sun.util.logging.resources.logging;
 
 public class Student implements Serializable {
 	private static final long serialVersionUID=1;
+	private int id;
 private String name;
 private int age;
 private String address;
@@ -18,6 +19,12 @@ public void setName(String name) {
 public int getAge() {
 	return age;
 }
+public void setId(int id) {
+	this.id = id;
+}
+public int getId() {
+	return id;
+}
 public void setAge(int age) {
 	this.age = age;
 }
@@ -29,7 +36,7 @@ public void setAddress(String address) {
 }
 @Override
 public String toString() {
-	return "Student [name=" + name + ", age=" + age + ", address=" + address + "]";
+	return "Student [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + "]";
 }
 
 }
